@@ -25,21 +25,54 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://stefanotravasci.it" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  StefanoTrv
 
 # Build settings
-theme: minima
+#theme: minima
+theme: chulapa-jekyll
+chulapa-skin:
+  highlight     :  skeletor # default["default"]
+  skin         :   navi # Optional predefined skins
+  autothemer    :  true # Bool: Use autotheming
+  vars          :
+    primary     : #default ["#007bff"] - Bootstrap blue
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 defaults:
   -
     scope:
-      path: "_posts"
+      path: ""
+    values:
+      layout: "default"
+      header_type: "base"
+      include_on_search: false
+      #cloudtag_url        : /tags #This is where the link on tags would redirect
+      #cloudcategory_url   : /categories #This is where the link on categories would redirect
+  -
+    scope:
+      type: "posts"
     values:
       permalink: /:year/:month/:day/:title
+      layout: "default"
+      header_type       : "post"
+      #include_on_search : true
+      #include_on_feed   : true
+      show_date         : true
+      #show_bottomnavs   : true
+      #show_sociallinks  : true
+      #show_comments     : true
+      #show_tags         : true
+      #show_categories   : true
+      #show_author       : true
+      #show_breadcrumb   : true
+      #breadcrumb_list   :
+      #  - label: Blog
+      #    url: /blog/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
