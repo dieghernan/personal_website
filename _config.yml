@@ -20,17 +20,32 @@
 
 title: Stefano Travasci
 email: stefanotravasci@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: "The personal site of Stefano Travasci"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stefanotravasci.it" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
 github_username:  StefanoTrv
+timezone: Europe/Rome
+#og_image: TODO
+
+author:
+  name : Stefano Travasci
+  avatar : /assets/img/profile.jpg
+  location : Pordenone, Italy
+  links:            
+    - url: https://github.com/StefanoTrv
+      icon: "fa-brands fa-github"
+      label: "My Github profile"
+    - url: https://www.linkedin.com/in/stefano-travasci/
+      icon: "fa-brands fa-linkedin"
+      label: "My LinkedIn profile"
+    - url: https://orcid.org/0000-0001-5693-6033
+      icon: "fa-brands fa-orcid"
+      label: "My ORCID profile"
+    - url: https://www.researchgate.net/profile/Stefano-Travasci
+      icon: "fa-brands fa-researchgate"
+      label: "My ResearchGate profile"
 
 # Build settings
-#theme: minima
 theme: chulapa-jekyll
 chulapa-skin:
   highlight     :  stackoverflow.light # default["default"]
@@ -68,7 +83,7 @@ defaults:
       #show_comments     : true
       #show_tags         : true
       #show_categories   : true
-      #show_author       : true
+      show_author       : true
       #show_breadcrumb   : true
       #breadcrumb_list   :
       #  - label: Blog
