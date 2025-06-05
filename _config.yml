@@ -29,27 +29,29 @@ timezone: Europe/Rome
 
 author:
   name : Stefano Travasci
+  email: stefanotravasci@gmail.com
+  uri: "https://stefanotravasci.it"
   avatar : /assets/img/profile.jpg
   location : Pordenone, Italy
-  links:            
-    - url: https://github.com/StefanoTrv
-      icon: "fa-brands fa-github"
-      label: "My Github profile"
-    - url: https://www.linkedin.com/in/stefano-travasci/
-      icon: "fa-brands fa-linkedin"
-      label: "My LinkedIn profile"
-    - url: https://orcid.org/0000-0001-5693-6033
-      icon: "fa-brands fa-orcid"
-      label: "My ORCID profile"
-    - url: https://www.researchgate.net/profile/Stefano-Travasci
-      icon: "fa-brands fa-researchgate"
-      label: "My ResearchGate profile"
+  links:
+    - url   : https://github.com/StefanoTrv
+      icon  : "fa-brands fa-github"
+      label : "My Github profile"
+    - url   : https://www.linkedin.com/in/stefano-travasci/
+      icon  : "fa-brands fa-linkedin"
+      label : "My LinkedIn profile"
+    - url   : https://orcid.org/0000-0001-5693-6033
+      icon  : "fa-brands fa-orcid"
+      label : "My ORCID profile"
+    - url   : https://www.researchgate.net/profile/Stefano-Travasci
+      icon  : "fa-brands fa-researchgate"
+      label : "My ResearchGate profile"
 
 # Build settings
 theme: chulapa-jekyll
 chulapa-skin:
   highlight     :  stackoverflow.light # default["default"]
-  skin         :   navi # Optional predefined skins
+  skin          :   navi # Optional predefined skins
   autothemer    :  true # Bool: Use autotheming
   vars          :
     primary     : #default ["#007bff"] - Bootstrap blue
@@ -57,6 +59,10 @@ chulapa-skin:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  
+feed:
+  path: atom.xml
+  icon: /assets/img/green_pizza.png
 
 defaults:
   -
@@ -88,6 +94,43 @@ defaults:
       #breadcrumb_list   :
       #  - label: Blog
       #    url: /blog/
+
+navbar:
+  style :  fab 
+  brand:
+    title :  Home
+    img: "./assets/img/green_pizza.png"
+    url: /
+  nav:
+  - title: One-level link #Label
+    url: /url1/  #url
+  - title: Two-level link #Label
+    child:
+    - title: Second level first item
+      url: /url2-1
+    - title: Second level second item
+      url: /url2-2
+  - title: One-level link #Label
+    url: /url1/  #url
+
+footer:
+  links:
+    #- label: "RSS"
+    #  icon: "fa fa-rss"
+    #  url:  "./atom.xml"
+    - url   : https://github.com/StefanoTrv
+      icon  : "fa-brands fa-github"
+      label : "My Github profile"
+    - url   : https://www.linkedin.com/in/stefano-travasci/
+      icon  : "fa-brands fa-linkedin"
+      label : "My LinkedIn profile"
+    - url   : https://orcid.org/0000-0001-5693-6033
+      icon  : "fa-brands fa-orcid"
+      label : "My ORCID profile"
+    - url   : https://www.researchgate.net/profile/Stefano-Travasci
+      icon  : "fa-brands fa-researchgate"
+      label : "My ResearchGate profile"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
