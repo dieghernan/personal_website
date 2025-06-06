@@ -61,7 +61,7 @@ plugins:
   - jekyll-sitemap
   
 feed:
-  path: atom.xml
+  #path: atom.xml
   icon: /assets/img/green_pizza.png
 
 defaults:
@@ -117,7 +117,7 @@ footer:
   links:
     #- label: "RSS"
     #  icon: "fa fa-rss"
-    #  url:  "./atom.xml"
+    #  url:  "./feed.xml"
     - url   : https://github.com/StefanoTrv
       icon  : "fa-brands fa-github"
       label : "My Github profile"
@@ -151,3 +151,17 @@ footer:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+    - mixed-decls
+    - abs-percent
+    - function-units
+    - color-functions
+
