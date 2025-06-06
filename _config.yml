@@ -57,12 +57,7 @@ chulapa-skin:
     primary     : #default ["#007bff"] - Bootstrap blue
 
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
-  
-feed:
-  #path: atom.xml
-  icon: /assets/img/green_pizza.png
 
 defaults:
   -
@@ -84,8 +79,8 @@ defaults:
       #include_on_search : true
       include_on_feed   : true
       show_date         : true
-      #show_bottomnavs   : true
-      #show_sociallinks  : true
+      show_bottomnavs   : true
+      show_sociallinks  : true
       #show_comments     : true
       #show_tags         : true
       #show_categories   : true
