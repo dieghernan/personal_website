@@ -51,10 +51,8 @@ author:
 theme: chulapa-jekyll
 chulapa-skin:
   highlight     :  stackoverflow.light # default["default"]
-  skin          :   navi # Optional predefined skins
+  skin          :   mytheme
   autothemer    :  true # Bool: Use autotheming
-  vars          :
-    primary     : #default ["#007bff"] - Bootstrap blue
 
 plugins:
   - jekyll-sitemap
@@ -79,7 +77,7 @@ defaults:
       #include_on_search : true
       include_on_feed   : true
       show_date         : true
-      show_bottomnavs   : true
+      #show_bottomnavs   : true
       show_sociallinks  : true
       #show_comments     : true
       #show_tags         : true
@@ -94,7 +92,7 @@ navbar:
   style :  fab 
   brand:
     title :  Home
-    img: "./assets/img/green_pizza.png"
+    img: "./assets/img/white_pizza.png"
     url: /
   nav:
   - title: One-level link #Label
@@ -112,7 +110,7 @@ footer:
   links:
     #- label: "RSS"
     #  icon: "fa fa-rss"
-    #  url:  "./feed.xml"
+    #  url:  "./atom.xml"
     - url   : https://github.com/StefanoTrv
       icon  : "fa-brands fa-github"
       label : "My Github profile"
