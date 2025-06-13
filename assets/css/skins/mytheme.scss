@@ -26,8 +26,14 @@ $navbar-chulapa-active-color: $warning !default; //not working!
 
 $thead-chulapa-bg-color: $secondary !default;
 
-$footer-chulapa-hover-color: $warning !default; //not working!
+$footer-chulapa-link-color: pink; //test!
+$footer-chulapa-hover-color: yellow; //test!
 
 .card.bg-primary, .card.bg-secondary {
   color: $white;
+}
+
+// This can be also in css custom, here it should be with important rule
+.navbar-chulapa-fab .nav-link:hover {
+    color: greenyellow !important;
 }

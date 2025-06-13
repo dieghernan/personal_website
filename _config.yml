@@ -51,7 +51,7 @@ author:
       label : "My ResearchGate profile"
 
 # Build settings
-theme: chulapa-jekyll
+theme: dieghernan/chulapa
 chulapa-skin:
   highlight     :  stackoverflow.light # default["default"]
   skin          :   mytheme
