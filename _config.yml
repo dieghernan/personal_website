@@ -24,8 +24,8 @@ repository: dieghernan/personal_website # Needs to be set (e.g. dieghernan/chula
 title: Stefano Travasci
 email: stefanotravasci@gmail.com
 description: "The personal site of Stefano Travasci"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://stefanotravasci.it" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dieghernan.github.io"
+baseurl: "/personal_website"
 github_username:  StefanoTrv
 timezone: Europe/Rome
 #og_image: TODO
