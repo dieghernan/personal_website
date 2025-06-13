@@ -51,7 +51,11 @@ author:
       label : "My ResearchGate profile"
 
 # Build settings
-theme: dieghernan/chulapa
+# Choose between:
+# a. With remote theme
+remote_theme: dieghernan/chulapa
+
+# theme: dieghernan/chulapa
 chulapa-skin:
   highlight     :  stackoverflow.light # default["default"]
   skin          :   mytheme
