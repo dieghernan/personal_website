@@ -18,6 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+repository: dieghernan/personal_website # Needs to be set (e.g. dieghernan/chulapa)
+
+
 title: Stefano Travasci
 email: stefanotravasci@gmail.com
 description: "The personal site of Stefano Travasci"
